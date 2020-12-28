@@ -1,6 +1,6 @@
 # PNU_3991_AR
 --------------
-# sina abari
+# سینا اکبری
 -------------
 - [Github](https://github.com/sinaa-akbari)
 - [PNU_3991_AR](https://github.com/sinaa-akbari/PNU_3991_AR)
