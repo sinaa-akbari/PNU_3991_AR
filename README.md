@@ -10,6 +10,17 @@
 - [Jlord Patchwork](https://github.com/sinaa-akbari/PNU_3991_AR/blob/PNU_3991_AR/jlord.PNG)
 
 
+## گروه ها
+
+1. G-L02
+    1. [_TLM01-05_سینا اکبری](https://github.com/AliRazavi-edu/PNU_3991/tree/master/_BSc/Theory-of-Languages-and-Machines/_1115157_01/05_%D8%B3%D9%8A%D9%86%D8%A7%20%D8%A7%D9%83%D8%A8%D8%B1%D9%8A%20%D9%83%D9%84%D9%8A%D8%B4%D8%A7%D8%AF%D9%8A)
+    1. [_TLM0 ]()
+
+
+
+
+
+
  ## Winter Semester Courses 1399/2020
     
 ## دروس کارشناسی
