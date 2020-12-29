@@ -12,32 +12,7 @@
 
 --------------------
 
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-	
-		<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: right;
-  padding: 8px;
-	direction: rtl;
-	
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-</head>
 
 <body>
 	
@@ -94,4 +69,4 @@ tr:nth-child(even) {
 </table>
 	
 </body>
-</html>
+
