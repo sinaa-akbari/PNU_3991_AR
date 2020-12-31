@@ -1,1 +1,99 @@
+\documentclass[10pt,a4paper]{article}
 
+\usepackage{graphicx}
+
+\begin{document}
+
+\scriptsize
+
+\begin{flushleft}
+\textsf{\textbf{  18\, $|$ \,Introduction to Automata Theory, Formal Languages and Computation}}
+\end{flushleft}
+
+Let $x \in (rs + rt)$
+
+\begin{center}
+  $\qquad\;\Longrightarrow (x \in rs \:or\: x \in rt)$
+
+  $\qquad\qquad\qquad\qquad\qquad\:\;\Longrightarrow (x \in r \:and\: x \in s) or (x \in r \:and\: x \in t)$
+
+  $\qquad\qquad\qquad\Longrightarrow x \in r \:and\: (x \in s \:or\: x \in t)$
+
+  $\Longrightarrow x \in r(s + t)$
+\end{center}
+
+That is $(rs + rt) \subseteq r(s + t)$.
+
+\qquad So, $r(s + t) = rs + rt (proved)$.
+
+\begin{flushleft}
+3. Prove that
+\end{flushleft}
+
+$(A \cup B) \cap (B \cup C) \cap (C \cup A) = (A \cap B) \cup (B \cap C) \cup (C \cap A).$
+
+Solution: From the distributive property, we know $A \cup (B \cap C) = (A \cup B) \cap (B \cup C).$
+
+$$\longrightarrow (B \cup A) \cap (B \cup C) \rightarrow B \cup (A \cap C) \rightarrow B \cup (C \cap A)$$
+
+\textbf{LHS $(A \cup B) \cap (B \cup C) \cap (C \cup A)$}
+
+\begin{center}
+  $\Longrightarrow [B \cup (C \cap A)] \cap (C \cup A)$
+
+  $\qquad\qquad\qquad\qquad\qquad\qquad\Longrightarrow [B \cap (C \cup A)] \cup [(C \cap A) \cup(C \cup A)] [As\: A \cap A = A]$
+
+  $\qquad\;\Longrightarrow (B \cap C) \cup(B \cap A) \cup (C \cap A)$
+
+  $\qquad\qquad\qquad\qquad\qquad\Longrightarrow (A \cap B) \cup (B \cap C) \cup (C \cap A) = RHS (proved).$
+\end{center}
+
+\begin{flushleft}
+  4. Let R be an equivalence relation in $\{0\}^{*}$ with the following equivalence classes:
+\end{flushleft}
+
+$[ \:] R = \{0\}^{0}$
+
+$[ 0 ]RR = {0}^{1}$
+
+$[00]R = \{0\}^{2} \cup \{0\}^{3} \cup \{0\}^{4} ……….$
+
+Show that R is right invariant .
+
+\begin{flushleft}
+  \qquad\textbf{\textsf{Solution:}} From the defi nition of right invariant, we know that if R is right invariant then for
+all x, y, and z,
+\end{flushleft}
+
+$$ xRy \Rightarrow xzRyz. $$
+
+From the given equivalence classes,
+
+$\qquad [\: ]_{R} $ means a null string.
+
+$\qquad[0]_{R} $ has only string 0.
+
+$\qquad[00]_{R} $ has strings 00, 000, 0000, ……, etc.
+
+\quad \tiny
+\quad
+
+Three cases may occur:
+
+i) \, If x and y are null string, i.e., if x, y $\in [\: ]_{R}$. xz = z and yz = z and zRz holds good.
+
+ii) \,If x, y $\in [0]_{R}, and z \in [ \:]_{_{R}},$ then xz = x and yz = y. So, xRy = xzRyz.
+
+\qquad If z $\in [0]_{R}$, then xz = 00 and yz = 00, Hence, xz = yz, which implies that xzRyz holds good.
+
+\qquad If z $\in [00]_{R}$, then z has at least 2 zeros. This means that xz and yz have at least 3 zeros which
+
+belongs to $[00]_{R}$. This means that xzRyz holds good.
+
+iii) If x, y $\in [00]_{R}$, then x and y each have at least 2 zeros. z may belong to any one of the three,
+
+\qquad but xy and yz produce strings of 2 or more zeros. That is, both of them belong to $[00]_{R}$. This
+
+\qquad means that xzRyz holds good.
+
+\end{document}
