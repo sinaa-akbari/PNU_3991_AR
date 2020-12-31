@@ -1,1 +1,100 @@
+\documentclass[10pt,a4paper]{article}
 
+\usepackage{graphicx}
+% Requires \usepackage{graphicx}
+
+\begin{document}
+
+\scriptsize
+
+\begin{flushright}
+\textsf{Basic Terminology}  \textbf{$|$ 17}
+\end{flushright}
+
+
+\begin{flushleft}
+8. A binary tree is a tree in which each node has at most two children.
+
+9. A full binary tree is a tree in which every node other than the leaves has two children.
+
+10. The operations of synchronous circuit are controlled by clock pulses. The operations in an asynchronous circuit are controlled by a number of completion and initialization signals. Here, the
+completion of one operation is the initialization of the execution of the next consecutive operation.
+
+11. The circuit whose output depends on the present state only is called a combinational circuit.,i.e.,O/P = Func.(Present I/P).
+
+12. If the output is the function of the external input and the present stored information, then the circuit
+is called a sequential circuit.,i.e.,O/P=Func.(External I/P and Present stored information).
+\end{flushleft}
+
+\begin{figure}[h]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=12cm]{1.1}\\
+\end{figure}
+
+\begin{flushleft}
+  1. Prove that A\, $\cup \,( B \,\cap \,C ) = ( A \,\cup \,B ) \,\cap\, ( A \,\cup \,C )$.
+\end{flushleft}
+
+\textbf{\textsl{Solution:}} Let $P = A \,\cup\, (B \,\cup\, C)  \,and \, Q = (A \,\cup\, B) \,\cap\, (A \,\cup\, C).$
+
+\qquad Consider an element a\, $\in$ \,P and b\, $\in$ \,Q.
+
+\qquad As $P = A \,\cup\, (B \,\cap\, C) and \, \:a \in P,$ it implies that
+\begin{center}
+$\quad \qquad a \in A\: or \:a \in (B \,\cap\, C)$
+
+$\quad \,\qquad\Longrightarrow a \in A \:or \{a \in B \:and \:a \in C\}$
+
+$\qquad \qquad\qquad\qquad\Longrightarrow \{a \in A \:or\: a \in B\} and \{a \in A \:or\: a \in C\}$
+
+$\quad\quad\quad\:\,\Longrightarrow a \in (A \cup B) and \:a \in (A \cup C)$
+
+$\quad\Longrightarrow a \in (A \cup B) \cap (A \cup C)$
+\end{center}
+
+It is proved that P is a subset of Q.
+
+As $Q = (A \cup B) \cap (A \cup C) and b \in Q,$ it implies that
+\begin{center}
+$\quad \qquad  b \in (A \cup B) and\:\: b \in (A \cup C) $
+
+$\quad\qquad \,\qquad\quad\qquad\Longrightarrow \{b \in A\: or\: b \in B\} and \{b \in A \: or\: b \in C\}$
+
+$\quad\quad\:\quad\:\,\Longrightarrow b \in A\: or \{b \in B \:and \:\:b \in C\}$
+
+$\quad\Longrightarrow b \in A \:or\: b \in (B \cap C)$
+\end{center}
+
+It is proved that Q is a subset of P.
+
+As P is a subset of Q and Q is a subset of P, it implies that P $\equiv$ Q.
+
+Thus $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ is proved.
+
+\begin{flushleft}
+    \qquad 2. Prove the following identity:
+
+  \qquad r (s + t) = rs + rt
+\end{flushleft}
+
+\textsl{\textbf{Solution:}} Let $x \in r(s + t),$
+
+\begin{center}
+
+  $\qquad\qquad\Longrightarrow x \in r \;and\; x \in (s + t)$
+  
+  $\qquad\qquad\quad\quad\Longrightarrow x \in r \;and\: (x \in s \:or\: x \in t)$
+  
+  $\qquad\qquad\qquad\qquad\qquad\quad\Longrightarrow (x \in r \;and\; x \in s) or (x \in r \;and\; x \in t)$
+  
+  $\:\;\Longrightarrow x \in (rs + rt)$
+  
+\end{center}
+
+That is $r(s + t) \subseteq (is a subset of) (rs + rt)$.
+
+
+
+
+\end{document}
