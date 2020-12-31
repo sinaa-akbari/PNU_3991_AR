@@ -1,1 +1,89 @@
+\documentclass [7pt]{beamer}
+\usepackage{xcolor}	
+\usepackage{tikz}
+\usetheme{Frankfurt}
+\useoutertheme{infolines}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\small
+\section*{mesal 1 , 2}
+\subsection*{Sina akbari }	
+\begin{frame}
+\justifying	
+1. Prove that $A \cup(B \cap C)=(A \cup B) \cap(A \cup C)$.
+\begin{flushleft}
+Solution: Let $P=A \cup(B \cup C)$ and $Q=(A \cup B) \cap(A \cup C)$.
 
+Consider an element a $\in \mathrm{P}$ and $\mathrm{b} \in \mathrm{Q}$. 
+
+
+As $P=A \cup(B \cap C)$ and $a \in P,$ it implies that
+\end{flushleft}
+$$
+\begin{array}{l}
+	\quad a \in A \text { or } a \in(B \cap C) \\
+	\Longrightarrow a \in A \text { or }\{a \in B \text { and } a \in C\} \\
+	\Longrightarrow\{a \in A \text { or } a \in B\} \text { and }\{a \in A \text { or } a \in C\} \\
+	\Longrightarrow a \in(A \cup B) \text { and } a \in(A \cup C) \\
+	\Longrightarrow a \in(A \cup B) \cap(A \cup C)
+\end{array}
+$$
+It is proved that $\mathrm{P}$ is a subset of $\mathrm{Q}$. 
+
+
+As $Q=(A \cup B) \cap(A \cup C)$ andb $\in Q,$ it implies that
+$$
+\begin{array}{l}
+	b \in(A \cup B) a n d b \in(A \cup C) \\
+	\Longrightarrow\{b \in A \text { or } b \in B\} a n d\{b \in A \text { or } b \in C\} \\
+	\Longrightarrow b \in A \text { or }\{b \in B \text { and } b \in C\} \\
+	\Longrightarrow b \in A \text { or } b \in(B \cap C)
+\end{array}
+$$
+It is proved that $Q$ is a subset of $P$.
+
+
+As $P$ is a subset of $Q$ and $Q$ is a subset of $P,$ it implies that $P \equiv Q$. 
+
+
+Thus $A \cup(B \cap C)=(A \cup B) \cap(A \cup C)$ is proved.
+\end{frame}
+
+
+\begin{frame}	
+2. Prove the following identity:
+
+
+r(s+t)=r s+r t
+\begin{flushleft}
+Solution: Let $x \in r(s+t)$,
+\end{flushleft}
+$$
+\begin{array}{l}
+\Longrightarrow x \in r \text { and } x \in(s+t) \\
+\Longrightarrow x \in r \text { and }(x \in s \text { or } x \in t) \\
+\Longrightarrow(x \in r \text { and } x \in s) o r(x \in r \text { and } x \in t) \\
+\Longrightarrow x \in(r s+r t)
+\end{array}
+$$
+That is $r(s+t) \subseteq($isasubsetof$)(r s+r t)$.
+\end{frame}
+\begin{frame}
+\justifying	
+Let $x \in(r s+r t)$
+$$
+\begin{array}{l}
+\Longrightarrow(x \in r s \text { or } x \in r t) \\
+\Longrightarrow(x \in r \text { and } x \in s) \text { or }(x \in r \text { and } x \in t) \\
+\Longrightarrow x \in r \text { and }(x \in \text { s or } x \in t) \\
+\Longrightarrow x \in r(s+t)
+\end{array}
+$$
+That is $(r s+r t) \subseteq r(s+t)$.
+
+
+So, $r(s+t)=r s+r t($ proved $)$ .
+\end{frame}
+\end{document}
